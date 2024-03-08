@@ -1,0 +1,1 @@
+export const baseUrl = "https://event-management-9pxe.onrender.com"
