@@ -85,7 +85,7 @@ function Header() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon className='text-black'/>
             </IconButton>
             <Menu 
   id="menu-appbar"
@@ -105,11 +105,11 @@ function Header() {
     display: { xs: 'block', md: 'none' },
   }}
 >
-<Link to={'/'} className='text-dark'>
+<Link to={'/'} className='text-dark px-3'>
               Home</Link><br />
-              <Link to={'/about'} className='text-dark'>
+              <Link to={'/about'} className='text-dark px-3'>
               About</Link><br />
-              <Link to={'/gallery'} className='text-dark'>
+              <Link to={'/gallery'} className='text-dark px-3'>
               Gallery</Link>
 </Menu>
 
@@ -134,7 +134,7 @@ function Header() {
              Bliss Events 
           </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex',gap:'30px' } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex',gap:'30px' } }} >
               <Link to={'/'} className='text-dark'>
               Home</Link>
               <Link to={'/about'} className='text-dark'>

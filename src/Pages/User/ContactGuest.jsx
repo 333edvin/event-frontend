@@ -58,19 +58,19 @@ const [listData,setListData] = useState([])
   },[])
 
   //edit contact ==============================================
-  const updateContactList = async(pid)=>{
-    const {guestname,number} = contactData
-    const reqHeader = {
-      "Authorization": `Bearer ${token}`,
-      "Content-Type": "application/json" 
-    };
-    try {
-      const result = await updateContactListAPI({_id:id},{guestname,number},{new:true})
-      console.log(result)
-    } catch (error) {
-      console.error("Error updating contact:", error);
-    }
-  }
+  // const updateContactList = async(pid)=>{
+  //   const {guestname,number} = contactData
+  //   const reqHeader = {
+  //     "Authorization": `Bearer ${token}`,
+  //     "Content-Type": "application/json" 
+  //   };
+  //   try {
+  //     const result = await updateContactListAPI({_id:id},{guestname,number},{new:true})
+  //     console.log(result)
+  //   } catch (error) {
+  //     console.error("Error updating contact:", error);
+  //   }
+  // }
   //delete contact===============================================
   const deleteContact = async(pid)=>{
     const reqHeader = {

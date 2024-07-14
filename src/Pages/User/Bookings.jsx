@@ -51,20 +51,7 @@ function Bookings() {
     return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimer(prevTimer => {
-        if (prevTimer <= 0) {
-          setDisabled(true);
-          clearInterval(interval);
-          return 0;
-        }
-        return prevTimer - 1;
-      });
-    }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <Container>

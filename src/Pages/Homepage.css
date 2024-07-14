@@ -3,6 +3,27 @@
     margin: 0;
     
 }
+.background-banner{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-content{
+    width: 950px;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-35%, -50%);
+}
+
+.h1{
+    font-size: 10vh;
+}
+
+.banner-image{
+    height: 400px;
+}
 
 .hero_content{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -31,3 +52,31 @@
 .color{
     background-color: rgb(26, 104, 78);
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .background-banner{
+        width: 100%;
+        height: 650px;
+        background-size: cover;
+    }
+    .banner-content{
+        width:auto;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        transform: translate(-5%, -30%);
+    }
+    .h1{
+        font-size: 6vh;
+    }
+    .banner-image{
+        display: none;
+    }
+    .hireus{
+    font-size: 2rem;
+    font-weight: bold;
+}
+    
+  }
